@@ -8,15 +8,25 @@ Zara/: Main directory of the project.
   tests/: Directory containing the test files.
   
   features/: Directory containing the .feature files with the Gherkin scenarios.
+  
     login.feature: File with the test scenarios written in Gherkin.
+    
   steps/: Directory containing the steps definition files.
+  
     login_steps.py: File with the steps defined for the test scenarios.
+    
   pages/: Directory containing the page files.
+  
     login_page.py: File containing the login page class.
+    
   conftest.py: Pytest configuration file.
+  
   test_login.py: Main test file that executes the test scenarios.
+  
   requirements.txt: File containing the project dependencies.
+  
 README.md: File with information about the project.
+
 
 
 SonarCloud
