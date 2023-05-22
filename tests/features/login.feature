@@ -84,5 +84,5 @@ Scenario : Inactive user
  And user enter a '<password>'
  And user check the privacy policy checkbox
  And user click on submit button
-Then should display the message alert "Inactive User"
+ Then should display the message alert "Inactive User"
  And should not display the title '<title>'
