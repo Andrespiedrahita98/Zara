@@ -7,3 +7,6 @@ SonarCloud
 Pipeline CI/CD
 ![image](https://github.com/Andrespiedrahita98/Zara/assets/124696572/0bddaf15-071b-4923-82a8-346faaae4d9e)
 
+Result with JUnit-xml Library
+![image](https://github.com/Andrespiedrahita98/Zara/assets/124696572/07e66af2-7cd5-4a25-8d9e-a95f86777559)
+
