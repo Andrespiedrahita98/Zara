@@ -1,0 +1,26 @@
+pool:
+  name: Azure Pipelines
+variables:
+  python.version: '3.11'
+
+steps:
+- task: UsePythonVersion@0
+  displayName: 'Use Python 3.11'
+  inputs:
+    versionSpec: 3.11
+
+- script: |
+   python -m pip install --upgrade pip && pip install pytest && pip install selenium && pip install behave && pip install junit-xml
+   exit 0
+  displayName: 'Install dependencies'
+
+- script: |
+   pip install pytest && pytest tests --doctest-modules --junitxml=junit/test-results.xml
+   exit 0
+  displayName: pytest
+
+- task: PublishTestResults@2
+  displayName: 'Publish Test Results **/test-results.xml'
+  inputs:
+    testResultsFiles: '**/test-results.xml'
+    testRunTitle: 'Python $(python.version)'
